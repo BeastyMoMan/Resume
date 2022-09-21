@@ -1,0 +1,55 @@
+body {
+    background-image: url("https://img.freepik.com/free-vector/random-square-halftone-pattern_1409-1062.jpg?w=2000");
+    font-family:'Courier New', Courier, monospace
+}
+
+h1{
+    background: white;
+    position: absolute; left: 400px; top: -10px;
+    font-size: 250%;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+ul{
+    color: white;
+}
+.myTabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1750px;
+    margin: 60px auto;
+    padding: 25px;
+}
+
+.myTabs input[type="radio"]{
+    display: none;
+}
+
+.myTabs label{
+    padding: 25px;
+    background: white;
+    font-weight: bold;
+}
+
+.myTabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: rgba(8,70,101,255);
+    display: none;
+    order: 1;
+}
+
+.myTabs input[type="radio"]:checked + label + .tab{
+    display: block;
+}
+
+.myTabs input[type="radio"]:checked + label{
+    background:  rgba(8,70,101,255);
+}
